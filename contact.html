@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/d3fd35b2df.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../../src/img/gamepad 1.png">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Maji Play Box</title>
+</head>
+<body>
+        <nav>
+                <div style="display: flex;align-items: center;justify-content: center;">
+                    <img src="./src/img/gamepad 1.png" alt="">
+                    <div style="color: white;">
+                            <h3 style="font-weight: 500;">MAGI PLAY</h3>
+                            <h1 style="font-size:8mm;color: white" >BOX</h1>
+                        </div> 
+                </div>
+        
+                <div class="selection">
+        
+                    <a href="./home.html">Home</a>
+                    <div class="main_dish">
+                        <div style="display: flex;align-items: center;">
+                            <a>Engage</a>
+                            <i class="fa-solid fa-angle-down" style="position: relative;left: -5px;"></i>
+                        </div>
+        
+                        <div class="dish_option">
+                            <a href="./appetizer.html">Appetizer</a>
+                            <div class="dish_option_list">
+                                <a href="./Engage_MainDishes/public/main_dish.html">Main Dish</a>
+                               
+                            </div>
+                            <a href="./DESSERT_G2/index.html">Dessert</a>
+                            <a href="./beverages/html/beverage.html">Beverages</a>
+                        </div>
+                    </div>
+        
+                    <a href="./Empathize/index.html">Empathize</a>
+                    <a href="./leaderboards/index.html">Recognize</a>
+                    <a href="">Contact</a>
+                    <!-- <a href="">Contact Us</a>
+                    <a href="">About Us</a> -->
+                </div>
+                <div class="log">
+                        <a href="./signup.html" class="signup">LogIn | SignUp</a>
+                </div>
+            </nav>
+   <br><br><br> <br><br><br><br><br>
+            <div>
+           
+            <div class="wrapper centered">
+                  
+              <article class="letter">
+                <div class="side">
+                   
+               <center> <h1>Contact us</h1></center>  
+                  <p>
+                    <textarea placeholder="Message"></textarea>
+                  </p>
+                </div>
+                <div class="side">
+                  <div>
+                     <img src="./src/img/gamepad 1.png" alt="" style="position:absolute; left: -1%; top: 60%;" width="20%">
+                  <h3 style="font-weight: 500;margin-right: 60%; color: white;left: 18%; position: absolute; top: 65%">MAGI PLAY</h3>
+                  <h1 style="font-size:8mm;color: white;margin-right: 69%; position: absolute;left: 17.5%; top: 70%" >BOX</h1>
+                  </div>
+                 
+                  <p>
+                    <input type="text" placeholder="Name">
+                  </p>
+                  <p>
+                    <input type="email" placeholder="Email">
+                  </p>
+                  <p>
+                    <button id="sendLetter">Send</button>
+                  </p>
+                </div>
+              </article>
+              <div class="envelope front"></div>
+              <div class="envelope back"></div>
+            </div>
+            <center><p class="result-message centered">Thank you for your message</p></center>      
+    </div>
+   <div class="div_rotatw"></div>
+
+    <script>
+    function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass); 
+    </script>
+</body>
+</html> 

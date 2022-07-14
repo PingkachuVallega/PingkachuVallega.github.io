@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous" />
+        <link rel="icon" type="image/x-icon" href="./src/img/gamepad 1.png">
+    <link rel="stylesheet" href="./signup.css">
+    <title>Maji Play Box | SignUp Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <div action="" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="user">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="pass">
+                </div>
+              <center> <input type="submit" value="Login" class="btn" id="submit">
+              </center>
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </div>
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="./signup.html" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                                <img src="./src/img/gamepad 1.png" alt="">
+                                <div style="color: white;">
+                                    <h3 style="font-weight: 500;">MAGI PLAY</h3>
+                                    <h1 style="font-size: 10mm;">BOX</h1>
+                                </div>
+                            </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos incidunt
+                        minima iure?</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="signin.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                                <img src="./src/img/gamepad 1.png" alt="">
+                                <div style="color: white;">
+                                    <h3 style="font-weight: 500;">MAGI PLAY</h3>
+                                    <h1 style="font-size:10mm; ">BOX</h1>
+                                </div>
+                            </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos incidunt
+                        minima iure?</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+ 
+
+    <script>
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+        const sign_up_btn = document.querySelector("#sign-up-btn");
+        const container = document.querySelector(".container");
+        const sign_in_btn2 = document.querySelector("#sign-in-btn2");
+        const sign_up_btn2 = document.querySelector("#sign-up-btn2");
+
+        sign_up_btn.addEventListener("click", () => {
+            container.classList.add("sign-up-mode");
+        });
+
+        sign_in_btn.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode");
+        });
+
+        sign_up_btn2.addEventListener("click", () => {
+            container.classList.add("sign-up-mode2");
+        });
+        sign_in_btn2.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode2");
+        });
+
+        var username = document.getElementById('user');
+        var password = document.getElementById('pass');
+        var submit = document.getElementById('submit');
+
+
+
+        submit.addEventListener("click", () => {
+            var myInit = {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                mode: 'cors',
+                cache: 'default'
+            };
+
+            let myRequest = new Request('./fetch_info.json', myInit);
+
+
+            fetch(myRequest)
+                .then(function (resp) {
+                    return resp.json();
+                })
+                .then(function (data) {
+
+                    if (data.username.includes(user.value) && data.password.includes(password.value)) {
+                        window.location.href="./home.html";
+                    }
+
+
+                })
+        });
+
+
+
+    </script>
+</body>
+
+</html>

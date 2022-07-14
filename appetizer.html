@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d3fd35b2df.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./src/img/gamepad 1.png">
+    <link rel="stylesheet" href="appetizer.css">
+    <title>MAGI PLAY BOX | Appetizer</title>
+</head>
+
+<body>
+        <nav>
+                <div style="display: flex;align-items: center;justify-content: center;">
+                    <img src="./src/img/gamepad 1.png" alt="">
+                    <div style="color: white;">
+                        <h3 style="font-weight: 500; font-family: 'Quicksand',sans-serif; ">MAGI PLAY</h3>
+                        <h1 style="font-size: 30    px; font-family: 'Roboto', sans-serif">BOX</h1>
+                    </div>
+                </div>
+        
+                <div class="selection">
+        
+                    <a href="./home.html">Home</a>
+                    <div class="main_dish">
+                        <div style="display: flex;align-items: center;">
+                            <a>Engage</a>
+                            <i class="fa-solid fa-angle-down" style="position: relative;left: -5px;"></i>
+                        </div>
+        
+                        <div class="dish_option">
+                            <a href="./appetizer.html">Appetizer</a>
+                            <a href="./Engage_MainDishes/public/main_dish.html">Main Dish</a>
+                            <a href="./DESSERT_G2/index.html">Dessert</a>
+                            <a href="./beverages/html/beverage.html">Beverages</a>
+                        </div>
+                    </div>
+        
+                    <a href="./Empathize/index.html">Empathize</a>
+                    <a href="./leaderboards/index.html">Recognize</a>
+                    <a href="./contact.html">Contact</a>
+                    <!-- <a href="">Contact Us</a>
+                    <a href="">About Us</a> -->
+                </div>
+                <div class="log">
+                    <a href="./signup.html" class="signup">LogIn | SignUp</a>
+                </div>
+            </nav>
+
+
+    <div class="background">
+        <h3 class="centered">BE ONE OF US!</h3>
+        <h5 class="c-quote">"Life is a combination of magic and pasta."</h5>
+    </div>
+
+
+
+    <div class="volunteer">
+        <div class="columnvolunteer">
+            <img src="./src/img/3.png" alt="" width="80%">
+        </div>
+        <div class="columnvolunteer">
+            <div class="textvolunteer">
+                <h2>BE A VOLUNTEER</h2><br>
+                <p>Offer your services as a
+                    volunteer to help our scholars achieve their goals and have a better future.
+                    Giving the students the opportunity to serve with you will allow you to see
+                    their range of abilities. When you volunteer, you are making connections and
+                    become involved in both problem and the solution. You are part of the process
+                    which you believe. Through your actions and involvement, you are benefitting
+                    others as well as yourself. So what are you waiting for be our volunteer and be
+                    one of us.</p>
+                <br>
+                <div class="box">
+                    <a class="button" href="#popup1">Let's GO!</a>
+                </div>
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Here i am</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            <img src="./src/img/teacher.png" alt="">
+                            <h4 class="ran" id="ran">Hi! I am Educator Ran.Currently working <br> for the fruitful life
+                                of the center and its scholars! <br>
+                                It is a tough job indeed perhaps, <br> watching how the center grow and how the
+                                scholars<br> reach their success, I care no more about the struggles.
+                                <br>&nbsp; I am happy to serve and hope you are too right now!
+                            </h4>
+                            <h4 class="run" id="run">You being independent, awaits a bright future.<br>You seek to know
+                                the whole picture before you judge.<br>
+                                You hate being sensitive because it made you<br> look fragile as well as love it for it
+                                push you to prioritize<br> others before thyself.
+                                <br>&nbsp; You have a good heart and a soul to help. <br> YOU ARE GIFTED TO GIVE
+                            </h4>
+                            <div class="fored" id="fored">
+                                <form class="form">
+                                    <br> <label for="fname">Name of the volunteer:</label><br>
+                                    <input type="text" id="fname" name="fname"><br><br>
+                                    <label for="lname">Date to start:</label><br>
+                                    <input type="text" id="lname" name="lname"><br><br>
+                                    <label for="lname">Date to end:</label><br>
+                                    <input type="text" id="lname" name="lname"><br> <br>
+
+                                    <button class="set" onclick="app()">SET</button>
+                                </form>
+                            </div>
+                            <button class="vol" id="vol" onclick="volunteer()">VOLUNTEER</button>
+                            <button class="happy" id="happy" onclick="happy()">I am HAPPY</button>
+                            <button class="sad" id="sad" onclick="sad()">I am SAD</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="mentor">
+
+        <div class="columnmentor">
+            <div class="textmentor">
+                <h2>BE A MENTOR</h2><br>
+                <p>Passerelles Numériques organinazation
+                    assists students in obtaining education related to the study of information
+                    technology, and at the moment, we heavily rely on volunteers for extra
+                    mentoring and coaching sessions in the evenings, as well as for remedial
+                    classes and other IT-related modules during semester breaks and the summer. Volunteers
+                    must possess the following attributes: time, patience, willingness to work
+                    with young adults, ideally prior teaching experience, and, of course, IT hard
+                    skills such as networking, database management, SQL, Java, Python, and web
+                    programming.</p>
+                <br>
+                <button id="myBtn" class="buttons">
+                    <h4> <b>Let's GO!</b> </p>
+                </button>
+
+                <div id="myModal" class="modal">
+                    <div id="pop">
+                        <h2>YOU GOT IT RIGHT!</h2>
+                        <p>They need a real time mentor! The more mentor, the more honed they are!</p>
+                        <br>
+                        <h3>Do you want to be a mentor?</h3><br>
+                        <button class="choose" onclick="Help()">Yes, I want to HELP!</button> &nbsp; &nbsp; &nbsp;
+
+
+                        <div class="calendar" id="calendar" onclick="exit()">
+
+                            <div class="col leftCol">
+                                <div class="content">
+                                    <h1 class="date">Friday<span>July 14</span></h1>
+                                    <div class="notes">
+                                        <p>
+                                            <input type="text" value="" placeholder="Schedule" />
+                                            <a href="#" title="Add note" class="addNote animate">+</a>
+                                        </p>
+                                        <ul class="noteList">
+                                            <li>I want to mentor this coming...<a href="#" title="Remove note"
+                                                    class="removeNote animate">x</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col rightCol">
+                                <div class="content">
+                                    <h2 class="year">2022</h2>
+                                    <ul class="months">
+                                        <li><a href="#" title="Jan" data-value="1">Jan</a></li>
+                                        <li><a href="#" title="Feb" data-value="2">Feb</a></li>
+                                        <li><a href="#" title="Mar" data-value="3">Mar</a></li>
+                                        <li><a href="#" title="Apr" data-value="4">Apr</a></li>
+                                        <li><a href="#" title="May" data-value="5">May</a></li>
+                                        <li><a href="#" title="Jun" data-value="6">Jun</a></li>
+                                        <li><a href="#" title="Jul" data-value="7" class="selected">Jul</a></li>
+                                        <li><a href="#" title="Aug" data-value="8">Aug</a></li>
+                                        <li><a href="#" title="Sep" data-value="9">Sep</a></li>
+                                        <li><a href="#" title="Oct" data-value="10">Oct</a></li>
+                                        <li><a href="#" title="Nov" data-value="11">Nov</a></li>
+                                        <li><a href="#" title="Dec" data-value="12">Dec</a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                    <ul class="weekday">
+                                        <li><a href="#" title="Mon" data-value="1">Mon</a></li>
+                                        <li><a href="#" title="Tue" data-value="2">Tue</a></li>
+                                        <li><a href="#" title="Wed" data-value="3">Wed</a></li>
+                                        <li><a href="#" title="Thu" data-value="4">Thu</a></li>
+                                        <li><a href="#" title="Fri" data-value="5">Fri</a></li>
+                                        <li><a href="#" title="Say" data-value="6">Sat</a></li>
+                                        <li><a href="#" title="Sun" data-value="7">Sun</a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                    <ul class="days">
+                                        <script>
+                                            for (var _i = 1; _i <= 31; _i += 1) {
+                                                var _addClass = '';
+                                                if (_i === 12) { _addClass = ' class="selected"'; }
+
+                                                switch (_i) {
+                                                    case 8:
+                                                    case 10:
+                                                    case 27:
+                                                        _addClass = ' class="event"';
+                                                        break;
+                                                }
+
+                                                document.write('<li><a href="#" title="' + _i + '" data-value="' + _i + '"' + _addClass + '>' + _i + '</a></li>');
+                                            }
+                                        </script>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                        </div>
+
+
+
+                        <button class="choose" onclick="exits()">Exit 🥺</button>
+                    </div>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Be My Own Mentor-Chef</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="volunteerism">
+                                <div class="box">
+                                    <img src="./src/img/1.gif" alt="">
+                                    <br><br>
+                                    <h3>Hey! I'm Chef Jun, currently honing our scholars to be an efficient
+                                        professional. <br> Can you help me create the best appetizer for them? Then
+                                        let's answer this question.</h3>
+                                    <br><br><br><br>
+                                    <h4>Play our Game to earn some POINTS!</h4> <br>
+
+                                    <div id="questions">
+                                        <h5>PN Center 1 has 70 scholars named Class 2022.
+                                            Their IT Classes are done online due to the pandemic and Mae,
+                                            being one of the scholar is having hardtime coping up with the
+                                            discussion for they only have limited time in using desktop and laptops
+                                            . Aside from giving them more rescources what is the best help
+                                            that Class 2022 needed right now?</h5>
+                                        <div id="answer-buttons" class="btn-grid">
+                                            <button class="btn" onclick="trueanswer()">A Group Mentor</button>
+                                            <button class="btn">Watching YouTube Tutorials</button>
+                                            <button class="btn">Overthink</button>
+                                            <button class="btn">Movie Marathon</button>
+                                        </div>
+
+
+                                    </div>
+                                    <button id="start" class="startbtn" onclick="showDiv()">
+                                        <h4>START!</h4>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="columnmentor">
+            <img src="./src/img/4.png" alt="" width="80%">
+        </div>
+
+    </div>
+
+
+
+    <div class="sponsor">
+        <div class="columnsponsor">
+            <img src="./src/img/5.png" alt="" width="100%">
+        </div>
+        <div class="columnsponsor">
+            <div class="textsponsor">
+                <h2>BE A SPONSOR</h2><br>
+                <p>When it comes in selecting students for their internship programs,
+                    companies are highly looking for a student who has the capability and skills to
+                    work with them. We
+                    practiced and increased productivity and efficiency in particular industries as
+                    we honed our pupils to be competent, effective, and trustworthy. Additionally,
+                    it can be advantageous for the business as a whole, from reducing training
+                    expenses to developing more productive, motivated workers.</p>
+                <br>
+                <button class="buttons" onclick="wait()">
+                    <h4> <b>Let's GO!</b> </p>
+                </button>
+                <div class="sponsorpop" id="waiter">
+                    <button class="x" onclick="exit01()">X</button>
+                    <h2 id="hide"> <b> WHAT WOULD YOU LIKE TO ORDER?</b></h2> <br>
+                    <h3 id="hides">Hi! I am Tresh, your waitress. I am currently looking for clients where our newly
+                        baked scholars
+                        would render their skills as a service. Can you help me find a plate for each of them? Let's
+                        take a tour!</h3>
+                    <h2 id="show"> <b> WHAT A LOVELY CHOICE!</b></h2> <br>
+                    <h3 id="shows">Here are the dishes recommended for you!</h3>
+                    <img src="./src/img/waiter_PNG8.png" alt="" width="30%">
+                    <div class="waiterbutton">
+                        <button class="waitbutton" id="first" onclick="Communication()">Communication Skills</button>
+                        <button class="waitbutton" id="second" onclick="Teamwork()">Teamwork Skills</button>
+                        <button class="waitbutton" id="third" onclick="Project()">Project Management Skills</button>
+                        <button class="waitbutton" id="fourth" onclick="Critical()">Critical Thinking & Problem Solving
+                            Skills</button>
+                        <button class="waitbutton" id="fifth" onclick="Experience()">Experience of Work</button>
+                        <button class="waitbutton" id="sixth" onclick="Software()">Software Education</button>
+                        <button class="waitbutton" id="seventh" onclick="Networking()">Networking</button>
+                        <button class="waitbutton" id="eight" onclick="Fresh()">Fresh Graduate</button>
+                        <div id="parent">
+                            <div id="plates" class="plates">
+                                <img src="./src/img/plate-removebg-preview.png" alt="" width="70%" onclick="plato()">
+                                <h4 id="names">Name and <br> Qualifications Here! </h4>
+                                <img src="./src/img/plate-removebg-preview.png" alt="" width="70%"  onclick="plato()">
+                                <h4 id="names1">Name and <br> Qualifications Here!</h4>
+                                <img src="./src/img/plate-removebg-preview.png" alt="" width="70%"  onclick="plato()">
+                                <h4 id="names2">Name and <br> Qualifications Here!</h4>
+                                <img src="./src/img/plate-removebg-preview.png" alt="" width="70%"  onclick="plato()">
+                                <h4 id="names3">Name and <br> Qualifications Here!</h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="button-86" id="button-86" role="button" onclick="CheckOut()">Check Out!</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <script>
+        function plato() {
+            var txt;
+            if (confirm("Please contact our admin for more inquires!")) {
+            } else {
+
+            }
+        }
+        function app() {
+            alert("Thank You!")
+        }
+        function volunteer() {
+            document.getElementById("fored").style.display = "block";
+            document.getElementById("vol").style.display = "none";
+        }
+        function happy() {
+            document.getElementById("ran").style.display = "none";
+            document.getElementById("run").style.display = "block";
+            document.getElementById("happy").style.display = "none";
+            document.getElementById("sad").style.display = "none";
+            document.getElementById("vol").style.display = "block";
+        }
+        function CheckOut() {
+            document.getElementById("first").style.display = "none";
+            document.getElementById("second").style.display = "none";
+            document.getElementById("third").style.display = "none";
+            document.getElementById("fourth").style.display = "none";
+            document.getElementById("fifth").style.display = "none";
+            document.getElementById("sixth").style.display = "none";
+            document.getElementById("seventh").style.display = "none";
+            document.getElementById("eight").style.display = "none";
+            document.getElementById("hide").style.display = "none";
+            document.getElementById("hides").style.display = "none";
+            document.getElementById("button-86").style.display = "none";
+            document.getElementById("show").style.display = "block";
+            document.getElementById("shows").style.display = "block";
+            document.getElementById("parent").style.display = "block";
+            document.getElementById("names").style.display = "block";
+            document.getElementById("names1").style.display = "block";
+            document.getElementById("names2").style.display = "block";
+            document.getElementById("names3").style.display = "block";
+
+        }
+        function Communication() {
+            document.getElementById("first").style.backgroundColor = "#fd9800";
+        }
+        function Teamwork() {
+            document.getElementById("second").style.backgroundColor = "#fd9800";
+        }
+        function Project() {
+            document.getElementById("third").style.backgroundColor = "#fd9800";
+        }
+        function Critical() {
+            document.getElementById("fourth").style.backgroundColor = "#fd9800";
+        }
+        function Experience() {
+            document.getElementById("fifth").style.backgroundColor = "#fd9800";
+        }
+        function Software() {
+            document.getElementById("sixth").style.backgroundColor = "#fd9800";
+        }
+        function Networking() {
+            document.getElementById("seventh").style.backgroundColor = "#fd9800";
+        }
+        function Fresh() {
+            document.getElementById("eight").style.backgroundColor = "#fd9800";
+        }
+        function showDiv() {
+            document.getElementById('questions').style.display = "block";
+            document.getElementById('start').style.display = "none";
+        }
+        function trueanswer() {
+            document.getElementById('pop').style.display = "block";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('start').style.display = "block";
+            document.getElementById("start").style.marginLeft = "63%";
+        }
+        function Help() {
+            document.getElementById('calendar').style.display = "block";
+        }
+        function exit() {
+            document.getElementById('calendar').style.display = "none";
+        }
+        function exits() {
+            document.getElementById('pop').style.display = "none";
+        }
+        function wait() {
+            document.getElementById("waiter").style.overflow = "hidden";
+            document.getElementById('waiter').style.display = "block";
+
+        }
+        function exit01() {
+            document.getElementById('waiter').style.display = "none";
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
